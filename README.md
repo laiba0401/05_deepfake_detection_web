@@ -39,6 +39,8 @@ An AI-powered web application for detecting deepfake images and videos using Eff
 - MTCNN (face detection)
 - OpenCV
 ## 📁 Project Structure
+
+```
 05_deepfake_detection_web/
 ├── backend/
 │   ├── manage.py
@@ -60,6 +62,7 @@ An AI-powered web application for detecting deepfake images and videos using Eff
             ├── ImageDetector.jsx
             ├── VideoDetector.jsx
             └── ResultCard.jsx
+```
 ## ⚙️ Installation
 
 ### Backend
