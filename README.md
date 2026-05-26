@@ -38,22 +38,28 @@ An AI-powered web application for detecting deepfake images and videos using Eff
 - EfficientNetB0 (pretrained on ImageNet)
 - MTCNN (face detection)
 - OpenCV
-
 ## 📁 Project Structure
 05_deepfake_detection_web/
 ├── backend/
-│   ├── backend/          # Django settings
-│   └── detector/         # ML pipeline + API
-│       ├── ml_model.py   # EfficientNet inference
-│       ├── views.py      # API endpoints
-│       └── models/       # Keras model (not included)
+│   ├── manage.py
+│   ├── backend/
+│   │   ├── settings.py
+│   │   └── urls.py
+│   └── detector/
+│       ├── ml_model.py      # EfficientNet inference pipeline
+│       ├── views.py         # API endpoints
+│       ├── urls.py          # URL routing
+│       ├── apps.py
+│       └── models/          # Place keras model here (not included)
 └── frontend/
-└── src/
-├── App.js
-└── components/
-├── ImageDetector.jsx
-├── VideoDetector.jsx
-└── ResultCard.jsx
+    ├── package.json
+    └── src/
+        ├── App.js
+        ├── App.css
+        └── components/
+            ├── ImageDetector.jsx
+            ├── VideoDetector.jsx
+            └── ResultCard.jsx
 ## ⚙️ Installation
 
 ### Backend
@@ -62,8 +68,8 @@ An AI-powered web application for detecting deepfake images and videos using Eff
 cd backend
 python -m venv venv
 venv\Scripts\activate        # Windows
-pip install django djangorestframework django-cors-headers
-pip install tensorflow mtcnn opencv-python pillow numpy
+source venv/bin/activate     # Mac/Linux
+pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
