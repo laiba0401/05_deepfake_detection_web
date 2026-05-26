@@ -83,11 +83,14 @@ npm start
 ```
 
 ### Model
+The trained model (`efficientnet_utkface.keras`) is not included in the repo due to file size.
 
-The trained model (`efficientnet_utkface.keras`) is not included due to file size (52MB).
+**Download:** [efficientnet_utkface.keras](https://drive.google.com/file/d/12v55kIAewgBC98p8L8jjD6SQhTxlzFJM/view?usp=sharing)
 
-Download or train your own and place it at:
+Place it at:
+```
 backend/detector/models/efficientnet_utkface.keras
+```
 ## 🚀 Usage
 
 1. Start Django backend on port 8000
@@ -120,7 +123,7 @@ Fine-tune on UTKFace (age diversity)
 - Faces with large hats or heavy occlusion may reduce accuracy
 - Very young children (under 3) may have lower confidence
 - Diffusion-generated images (Midjourney, Stable Diffusion) not yet supported
+## 👩‍💻 Authors
 
-## 👩‍💻 Author
-
-Laiba — deepfake detection project
+- **Laiba Tauseef** — ML pipeline, model training, backend
+- **Syeda Maleeha Bano Naqvi** —  frontend, data collection, Report Writing
