@@ -128,5 +128,5 @@ Fine-tune on UTKFace (age diversity)
 - Diffusion-generated images (Midjourney, Stable Diffusion) not yet supported
 ## 👩‍💻 Authors
 
-- **Laiba Tauseef** — ML pipeline, model training, backend
-- **Syeda Maleeha Bano Naqvi** —  frontend, data collection, Report Writing
+- **[Laiba Tauseef](https://github.com/laiba0401)** — ML pipeline, model training, backend
+- **[Syeda Maleeha Bano Naqvi](https://github.com/maleeha1d2003)** — frontend, data collection, Report Writing
