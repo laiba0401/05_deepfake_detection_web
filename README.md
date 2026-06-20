@@ -110,6 +110,7 @@ backend/detector/models/efficientnet_utkface.keras
 - **UTKFace Dataset** — age/diversity coverage
 
 ## 🏋️ Training Pipeline
+
 Custom CNN (baseline)
 ↓
 EfficientNetB0 Phase 1 (frozen base, train head)
@@ -121,6 +122,7 @@ Fine-tune on DFD video frames
 Fine-tune on StyleGAN2 faces
 ↓
 Fine-tune on UTKFace (age diversity)
+
 ## ⚠️ Known Limitations
 
 - Faces with large hats or heavy occlusion may reduce accuracy
